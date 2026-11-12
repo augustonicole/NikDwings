@@ -43,7 +43,7 @@ header{ position:relative; z-index:50; }
 }
 
 /* ---------- NAV ---------- */
-header{ padding:28px 0 0; }
+header{ padding:0 0 0; }
 nav.wrap{
   display:flex;
   align-items:center;
@@ -864,7 +864,7 @@ footer .wrap{
 }
 
 @media (max-width:520px){
-  .wrap{ padding:0 22px; }
+  .wrap{ padding:30px 22px; }
   .hero-actions{ flex-direction:column; align-items:flex-start; }
   .section-head{ flex-direction:column; align-items:flex-start; }
 }
