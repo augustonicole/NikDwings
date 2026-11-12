@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 # Publica o site no GitHub Pages a cada push na branch main.
 # Antes: Settings → Pages → Source → "GitHub Actions".
 name: Deploy
 
+=======
+name: Deploy
+>>>>>>> 971c9250575cb7c98d162a20bf37802ef311f3ad
 on:
   push:
     branches: [main]
@@ -38,3 +42,11 @@ jobs:
           path: ./dist
       - id: deployment
         uses: actions/deploy-pages@v4
+<<<<<<< HEAD
+=======
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
+>>>>>>> 971c9250575cb7c98d162a20bf37802ef311f3ad
