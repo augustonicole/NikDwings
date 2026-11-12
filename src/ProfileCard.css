@@ -74,6 +74,7 @@
   .card-wrapper:before {
       width: 70%;
   }
+}
 
 .card-wrapper:hover,
 .card-wrapper.active {
