@@ -7,10 +7,10 @@ export const skills = [
   { id: 'sass', name: 'Sass', percent: 75, icon: '𝓢   ', color: 'rgb(192 65 128)' },
   { id: 'js', name: 'JavaScript', percent: 40, icon: 'JS', color: '#f0db4f', dark: true },
   { id: 'canva', name: 'Canva', percent: 20, icon: 'C', color: '#00c4cc' },
-  { id: 'Illustrations', name: 'Illustration', percent: 75, icon: '✎', color: '#111827' },
+  { id: 'Illustrations', name: 'Illustration', percent: 65, icon: '✎', color: '#111827' },
   { id: 'word press', name: 'WordPress', percent: 10, icon: 'W', color: '#21759b' },
   { id: 'Claude IA', name: 'Claude', percent: 40, icon: '✴', color: '#D97757' },
-  { id: 'Photoshop', name: 'Adobe Photoshop', percent: 80, icon: 'PS', color: '#001E36' },
+  { id: 'Photoshop', name: 'Adobe Photoshop', percent: 70, icon: 'PS', color: '#001E36' },
   { id: 'Illustrator', name: 'Adobe Illustrator', percent: 60, icon: 'Ai', color: '#330000' },
   { id: 'ClipStudio Paint', name: 'ClipStudio Paint', percent: 75, icon: 'CSP', color: 'rgb(62, 163, 249)' },
 ]
