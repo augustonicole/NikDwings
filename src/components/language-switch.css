@@ -7,7 +7,7 @@
 .lang-switch {
   position:relative;
   z-index:11; /* fica acima do menu mobile aberto */
-  left: 48rem;
+  left: 45rem;
   bottom: 3rem;
 }
 

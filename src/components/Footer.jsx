@@ -5,9 +5,9 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   const social = [
-    { label: 'Instagram', href: '#' },
-    { label: 'Behance', href: '#' },
-    { label: 'LinkedIn', href: '#' },
+    { label: 'Instagram', href: 'https://www.instagram.com/nikdwings?srtk=dnBrMzU3bnFsd2hq' },
+    //{ label: 'Behance', href: '#' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nicole-augusto-b6a5093b2?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
   ]
 
   return (
