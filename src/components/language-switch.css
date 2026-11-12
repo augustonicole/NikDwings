@@ -7,13 +7,8 @@
 .lang-switch{
   position:relative;
   z-index:11; /* fica acima do menu mobile aberto */
-<<<<<<< HEAD
-  left: 47rem;
-  bottom: 0rem;
-=======
   left: 48rem;
   bottom: 3rem;
->>>>>>> 971c9250575cb7c98d162a20bf37802ef311f3ad
 }
 
 /* Botão que mostra o idioma atual */
