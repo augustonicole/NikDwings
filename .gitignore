@@ -1,0 +1,9 @@
+# dependências e build (são gerados automaticamente)
+node_modules
+dist
+
+# arquivos do sistema e logs
+.DS_Store
+Thumbs.db
+*.log
+*.local
