@@ -107,6 +107,7 @@
 @media (max-width:860px){
   .nav-right{
     gap:4px;
+    display: flex;
   }
 
   .lang-switch{
