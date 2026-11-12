@@ -4,7 +4,7 @@
   gap:32px;
 }
 
-.lang-switch{
+.lang-switch {
   position:relative;
   z-index:11; /* fica acima do menu mobile aberto */
   left: 48rem;
