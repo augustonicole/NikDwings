@@ -41,7 +41,7 @@
   &:before {
     content: "";
     position: absolute;
-    margin: 0% 26% 0% 0%;
+    margin: 0% 36% 0% 0%;
     inset: -10px;
     background: inherit;
     background-position: inherit;
@@ -81,7 +81,7 @@
 }
 
 #card {
-  height: 80svh;
+  height: 70svh;
   max-height: 540px;
   display: grid;
   aspect-ratio: 0.718;
