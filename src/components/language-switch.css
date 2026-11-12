@@ -7,8 +7,8 @@
 .lang-switch{
   position:relative;
   z-index:11; /* fica acima do menu mobile aberto */
-  left: 48rem;
-  bottom: 3rem;
+  left: 47rem;
+  bottom: 0rem;
 }
 
 /* Botão que mostra o idioma atual */

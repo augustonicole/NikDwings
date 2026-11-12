@@ -180,7 +180,7 @@ nav.wrap{
   flex-direction:column;
   justify-content:center;
   align-items:flex-start;
-  padding:120px 0 80px;
+  padding:40px 0 80px;
   position:relative;
 }
 .eyebrow{
@@ -215,7 +215,7 @@ nav.wrap{
 }
 
 .hero p{
-  margin-top:26px;
+  margin-top:0;
   font-size:1.08rem;
   line-height:1.7;
   color:var(--text-muted);
@@ -262,7 +262,7 @@ nav.wrap{
 .btn-ghost:hover, .btn-ghost:focus-visible{ border-color:var(--accent-gold); color:var(--accent-gold); }
 
 /* ---------- SECTION HEADERS ---------- */
-.section{ padding:120px 0; }
+.section{ padding:40px 0; }
 .section-head{
   display:flex;
   justify-content:space-between;
