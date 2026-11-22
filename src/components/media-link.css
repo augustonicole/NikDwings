@@ -1,0 +1,48 @@
+/* Link dentro de uma imagem da galeria (campo `link` no data/work.js) */
+
+/* Selo ↗ no canto da miniatura */
+.gallery-thumb{ position:relative; }
+.thumb-link{
+  position:absolute;
+  top:8px; right:8px;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:26px; height:26px;
+  border-radius:50%;
+  background:#05060fcc;
+  border:1px solid var(--accent-gold-dim);
+  color:var(--accent-gold);
+  font-size:.8rem;
+  line-height:1;
+  pointer-events:none;
+}
+
+/* Botão "Visitar site" no visualizador ampliado */
+.lightbox-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 20px;
+  border:1px solid var(--accent-gold-dim);
+  border-radius:99px;
+  background:#0e1330cc;
+  color:var(--accent-gold);
+  font-size:.85rem;
+  font-weight:600;
+  letter-spacing:.04em;
+  text-decoration:none;
+  transition:background .25s ease, color .25s ease;
+}
+.lightbox-link:hover,
+.lightbox-link:focus-visible{
+  background:var(--accent-gold);
+  color:#191106;
+}
+
+/* O botão ocupa espaço: a imagem fica um pouco menor para tudo caber na tela */
+.lightbox-figure.has-link{ --lb-h:min(74vh, calc(100vh - 300px)); }
+@media (max-width:600px){
+  .lightbox-figure.has-link{ --lb-h:min(66vh, calc(100vh - 350px)); }
+}

@@ -44,6 +44,7 @@ export const translations = {
       zoomIn: 'Aumentar zoom',
       zoomOut: 'Diminuir zoom',
       zoomReset: 'Ajustar à tela',
+      visitSite: 'Visitar site',
     },
     about: {
       eyebrow: 'Sobre',
@@ -112,6 +113,7 @@ export const translations = {
       zoomIn: 'Zoom in',
       zoomOut: 'Zoom out',
       zoomReset: 'Fit to screen',
+      visitSite: 'Visit site',
     },
     about: {
       eyebrow: 'About',
@@ -180,6 +182,7 @@ export const translations = {
       zoomIn: 'Acercar',
       zoomOut: 'Alejar',
       zoomReset: 'Ajustar a la pantalla',
+      visitSite: 'Visitar sitio',
     },
     about: {
       eyebrow: 'Sobre mí',

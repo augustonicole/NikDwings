@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import GalleryImage from './GalleryImage.jsx'
 import { useLang } from '../i18n/LanguageContext.jsx'
+import './media-link.css'
 
 /**
  * Sub-galeria que se expande abaixo da linha do card clicado.
@@ -84,6 +85,9 @@ export default function WorkGallery({ item, onClose, onOpenImage }) {
                       poster={image.poster}   // <-- Obrigatório passar!
                       index={i}
                     />
+                    {image.link && (
+                      <span className="thumb-link" aria-hidden="true">↗</span>
+                    )}
                   </button>
                 </li>
               ))}

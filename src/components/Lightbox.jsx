@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import GalleryImage from './GalleryImage.jsx'
 import { useLang } from '../i18n/LanguageContext.jsx'
+import './media-link.css'
 
 const clamp01 = (n) => Math.min(1, Math.max(0, n))
 
@@ -299,7 +300,7 @@ export default function Lightbox({ theme, index, onClose, onChange }) {
       if (total > 1 && e.key === 'ArrowRight') return go(1)
       if (total > 1 && e.key === 'ArrowLeft') return go(-1)
       if (e.key === 'Tab') {
-        const f = dialogRef.current?.querySelectorAll('button:not(:disabled)')
+        const f = dialogRef.current?.querySelectorAll('button:not(:disabled), a[href]')
         if (!f?.length) return
         const first = f[0]
         const last = f[f.length - 1]
@@ -363,7 +364,7 @@ export default function Lightbox({ theme, index, onClose, onChange }) {
       )}
 
       <figure
-        className="lightbox-figure"
+        className={`lightbox-figure${current.link ? ' has-link' : ''}`}
         style={{ '--thumb-grad': gradient }}
         onClick={(e) => e.target === e.currentTarget && onClose()}
       >
@@ -391,6 +392,16 @@ export default function Lightbox({ theme, index, onClose, onChange }) {
           <span>{current.alt || title}</span>
           <small>{index + 1} / {total}</small>
         </figcaption>
+        {current.link && (
+          <a
+            className="lightbox-link"
+            href={current.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t.work.visitSite} <span aria-hidden="true">↗</span>
+          </a>
+        )}
       </figure>
 
       {total > 1 && (

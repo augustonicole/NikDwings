@@ -56,6 +56,7 @@ export const workItems = [
     images: [
       { src: img('web-01.webp'), thumb: img('web-01-thumb.webp'), alt: 'Site feito com base no curso de CSS avançado' },
       { src: img('web-02.webp'), thumb: img('web-02-thumb.webp'), alt: 'Site feito com base no curso de CSS avançado' },
+      { src: img('site_01.png'), thumb: img('site_01.png'), link: 'https://augustonicole.github.io/scrollscene_test/', alt: 'Site feito para testar o efeito de scroll em telas, clique para checar o site' },
     ]
   },
   {
