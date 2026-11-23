@@ -16,14 +16,10 @@
 
 *{box-sizing:border-box; margin:0; padding:0;}
 
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; background:var(--bg-deep);}
 
 body{
-  background:
-    radial-gradient(ellipse 90% 60% at 20% 0%, var(--nebula-violet) 0%, transparent 55%),
-    radial-gradient(ellipse 70% 50% at 85% 15%, var(--nebula-teal) 0%, transparent 50%),
-    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid) 45%, var(--bg-deep) 100%);
-  background-attachment:fixed;
+  /* o fundo (nebulosa + estrelas) agora fica na camada fixa .star-container, em stars.css */
   color:var(--text-soft);
   font-family:'Manrope', sans-serif;
   min-height:100vh;

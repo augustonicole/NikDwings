@@ -1,11 +1,16 @@
 .star-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;                  /* cobre a tela toda, sem depender de vw/vh (instáveis no Safari do iPhone) */
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;                /* antes era -1: no Safari o fundo do body podia cobrir as estrelas */
+  pointer-events: none;
+  /* fundo do site: antes ficava no body com background-attachment: fixed, que o iOS ignora */
+  background:
+    radial-gradient(ellipse 90% 60% at 20% 0%, var(--nebula-violet) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 15%, var(--nebula-teal) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid) 45%, var(--bg-deep) 100%);
 }
 
 /* Estrelas Fixas */

@@ -7,8 +7,8 @@ function StarBackground({ starCount = 220, meteorCount = 7 }) {
   const stars = useMemo(() => {
     return Array.from({ length: starCount }).map((_, i) => ({ 
       id: Math.random(),
-      left: `${Math.random() * 100}vw`,
-      top: `${Math.random() * 100}vh`,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
       size: `${Math.random() * 1.5 + 0.5}px`,
       duration: `${Math.random() * 3 + 2}s`,
       delay: `${Math.random() * 5}s`,
@@ -19,8 +19,8 @@ function StarBackground({ starCount = 220, meteorCount = 7 }) {
   const meteors = useMemo(() => {
     return Array.from({ length: meteorCount }).map((_, i) => ({
       id: i,
-      top: `${Math.random() * -20}vh`, // Começa acima da tela
-      left: `${Math.random() * 100}vw`, // Posição horizontal aleatória
+      top: `${Math.random() * -20}%`, // Começa acima da tela
+      left: `${Math.random() * 100}%`, // Posição horizontal aleatória
       duration: `${Math.random() * 2 + 2}s`, // Velocidade do rastro
       delay: `${Math.random() * 10}s`, // Tempo entre aparições
     }));
